@@ -1,0 +1,18 @@
+1. Thông tin lịch học cá nhân
+- Chia bố cục head và body
+- Chia body thành header, main và footer
+- Main gồm 2 phần: Thông tin chung và Lịch học
+- Thông tin chung sử dụng tag <img> chèn ảnh, sau đó điền thông tin
+- Lịch học sử dụng tag <table> tạo bảng gồm 4 cột theo đề bài, sau đó điền thông tin các hàng
+- Cuối cùng nêu cảm nghĩ và tạo footer
+
+2. Trang Google Search
+- Chia bố cục head và body
+- Chia body thành header, main và footer
+- Header là navbar cho truy cập các trang của Google, sử dụng tag <a>
+- Main gồm logo Google, form tìm kiếm, các nút phụ
+- Sử dụng tag <img> chèn logo
+- Sử dụng tag <form> tạo form tìm kiếm
+- Trong đó sử dụng tag <button> kèm với <img> tạo các nút bấm
+- Tag <input> để người dùng nhập yêu cầu
+- Cuối cùng tạo footer với navbar tương tự header
