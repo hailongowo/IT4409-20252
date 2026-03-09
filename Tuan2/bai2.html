@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang = "vi">
+<html lang="vi">
     <head>
-        <meta charset = "UTF-8">
-        <title>
-            Google Search
-        </title>
+        <meta charset="UTF-8">
+        <title>Google Search</title>
     </head>
 
     <body>
         <header>
+            <h1>Google Search</h1>
+            <!-- Navbar của Header -->
             <nav>
                 <a href="#">Gmail</a>
                 <a href="#">Hình ảnh</a>
@@ -20,21 +20,68 @@
         <hr>
 
         <main>
+            <!-- Chèn logo -->
             <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo">
             
+            <!-- Form tìm kiếm -->
             <section>
                 <form action="#" method="GET">
+                    <!-- Chèn ảnh vào button-->
                     <button type="button">
-                        <img src = "https://fonts.gstatic.com/s/i/materialicons/add/v20/24px.svg" height = "10px" width = "10px">
+                        <img src="https://fonts.gstatic.com/s/i/materialicons/add/v20/24px.svg" height="10" width="10" alt="Thêm">
                     </button>
+                    
+                    <!-- Input tìm kiếm -->
                     <input type="text" id="search-box" name="q" size="40" placeholder="Nhập từ khóa tìm kiếm...">
+                    
                     <button type="button">
-                        <img src = "https://cdn-icons-png.freepik.com/512/566/566100.png" height = "10px" width = "10px">
+                        <img src="assets/kb.png" height="10" width="10" alt="Bàn phím ảo">
                     </button>
+
+                    <button type="button">
+                        <img src="https://cdn-icons-png.freepik.com/512/566/566100.png" height="10" width="10" alt="Microphone">
+                    </button>
+
+                    <button type="button">
+                        <img src="assets/lens.png" height="10" width="10" alt="Google Lens">
+                    </button>
+
+                    <button type="button">
+                        Chế độ AI
+                    </button>
+                    
                     <br><br>
+                    
+                    <!-- Buttons tìm kiếm -->
                     <button type="submit">Tìm trên Google</button>
                     <button type="button">Xem trang đầu tiên tìm được</button>
                 </form>
             </section>
+
+            <br>
+
+            <section>
+                Google hỗ trợ các ngôn ngữ: <a href="#">English</a> <a href="#">Français</a> <a href="#">繁體中文</a>
+            </section>
         </main>
+
+        <hr>
+
+        <footer>
+            <p>Việt Nam</p>
+            <hr>
+            <!-- Navbar của Footer -->
+            <nav>
+                <a href="#">Giới thiệu</a>
+                <a href="#">Quảng cáo</a>
+                <a href="#">Doanh nghiệp</a>
+                <a href="#">Cách hoạt động của Tìm kiếm</a>
+                <a href="#">Quyền riêng tư</a>
+                <a href="#">Điều khoản</a>
+                <a href="#">Cài đặt</a>
+            </nav>
+            <br>
+            <small>MSSV: 20235146 - 9/3/2026</small>
+        </footer>
     </body>
+</html>
