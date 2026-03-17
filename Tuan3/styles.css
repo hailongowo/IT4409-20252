@@ -27,7 +27,7 @@
 /* 4. Định dạng từng Nút (thẻ a) */
 .nav-list a {
     display: block;
-    font-size: 2.2rem;
+    font-size: 1.5rem;
     padding: 2rem;
     color: white;
     text-decoration: none;
@@ -51,6 +51,56 @@
 
 #projects {
     height: 100vh;
+    background-color: aquamarine;
+    text-align: center;
+    padding: 6rem 2rem;
+}
+
+#projects h2 {
+    font-size: 2.5rem;
+    margin-bottom: 4rem; /* Đẩy lưới dự án xuống một chút để cách xa tiêu đề */
+    text-decoration: underline; /* Tạo gạch chân cho tiêu đề giống trang mẫu */
+    text-underline-offset: 10px; /* Cách gạch chân xa chữ ra một chút cho đẹp */
+}
+
+.projects-grid {
+    display: grid; /* Bật chế độ Grid */
+    /* Lệnh thần thánh: Tự động xếp các cột, mỗi cột rộng tối thiểu 300px, tối đa lấp đầy không gian */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 4rem; /* Khoảng cách siêu rộng giữa các khối giống y trang mẫu */
+    max-width: 1280px; /* Đừng để lưới rộng quá khi xem trên màn hình lớn */
+    margin: 0 auto; /* Căn giữa lưới trên màn hình */
+}
+
+/* --- Định dạng từng khối dự án (Project Card) --- */
+.project-tile {
+    background-color: #303841; /* Nền xám đen cho cái hộp */
+    text-decoration: none; /* Bỏ gạch chân mặc định của thẻ link */
+    color: white; /* Chữ trắng */
+    border-radius: 5px; /* Bo góc nhẹ */
+    overflow: hidden; /* Quan trọng: Đảm bảo ảnh không bị tràn ra ngoài góc bo */
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5); /* Thêm bóng đổ nhẹ để khối nổi lên */
+    transition: transform 0.3s ease-out; /* Hiệu ứng mượt mà khi di chuột */
+}
+
+/* Hiệu ứng khi di chuột lên khối dự án */
+.project-tile:hover {
+    transform: translateY(-5px); /* Khối dự án nhích nhẹ lên trên 5px */
+}
+
+/* --- Định dạng Ảnh bên trong khối --- */
+.project-image {
+    width: 100%; /* Ảnh luôn lấp đầy chiều ngang của thẻ card */
+    height: 300px; /* Đặt chiều cao cố định cho tất cả các ảnh */
+    object-fit: cover; /* Đảm bảo ảnh không bị méo khi bị ép kích thước */
+    display: block; /* Sửa lỗi khoảng trắng thừa dưới chân ảnh của trình duyệt */
+}
+
+/* --- Định dạng Tựa đề bên trong khối --- */
+.project-title {
+    font-size: 1.5rem;
+    padding: 1.5rem;
+    margin: 0;
 }
 
 @media (max-width: 600px) {
@@ -61,5 +111,18 @@
     .nav-list a {
         font-size: 1.2rem;
         padding: 1rem 0.8rem;
+    }
+
+    #projects {
+        padding: 4rem 1rem; /* Giảm khoảng đệm 2 bên xuống 1rem để các khối dự án có thể mở rộng tối đa */
+    }
+
+    .projects-grid {
+        gap: 2rem; /* Giảm khoảng cách giữa các dự án (gap) từ 4rem xuống 2rem để lưới gọn hơn */
+    }
+
+    #projects h2 {
+        font-size: 1.8rem; /* Thu nhỏ tiêu đề một chút cho vừa vặn với màn hình nhỏ */
+        margin-bottom: 2rem;
     }
 }
