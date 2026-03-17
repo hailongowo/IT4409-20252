@@ -50,7 +50,7 @@
 }
 
 #projects {
-    height: 100vh;
+    height: max-content;
     background-color: aquamarine;
     text-align: center;
     padding: 6rem 2rem;
@@ -58,29 +58,26 @@
 
 #projects h2 {
     font-size: 2.5rem;
-    margin-bottom: 4rem; /* Đẩy lưới dự án xuống một chút để cách xa tiêu đề */
-    text-decoration: underline; /* Tạo gạch chân cho tiêu đề giống trang mẫu */
-    text-underline-offset: 10px; /* Cách gạch chân xa chữ ra một chút cho đẹp */
+    margin-bottom: 4rem; 
+    text-underline-offset: 10px;
 }
 
 .projects-grid {
-    display: grid; /* Bật chế độ Grid */
-    /* Lệnh thần thánh: Tự động xếp các cột, mỗi cột rộng tối thiểu 300px, tối đa lấp đầy không gian */
+    display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 4rem; /* Khoảng cách siêu rộng giữa các khối giống y trang mẫu */
-    max-width: 1280px; /* Đừng để lưới rộng quá khi xem trên màn hình lớn */
-    margin: 0 auto; /* Căn giữa lưới trên màn hình */
+    gap: 4rem;
+    max-width: 1280px;
+    margin: 0 auto;
 }
 
-/* --- Định dạng từng khối dự án (Project Card) --- */
 .project-tile {
-    background-color: #303841; /* Nền xám đen cho cái hộp */
-    text-decoration: none; /* Bỏ gạch chân mặc định của thẻ link */
-    color: white; /* Chữ trắng */
-    border-radius: 5px; /* Bo góc nhẹ */
-    overflow: hidden; /* Quan trọng: Đảm bảo ảnh không bị tràn ra ngoài góc bo */
-    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5); /* Thêm bóng đổ nhẹ để khối nổi lên */
-    transition: transform 0.3s ease-out; /* Hiệu ứng mượt mà khi di chuột */
+    background-color: #303841;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease-out;
 }
 
 /* Hiệu ứng khi di chuột lên khối dự án */
