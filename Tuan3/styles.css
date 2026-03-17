@@ -1,0 +1,65 @@
+/* 1. Reset khoảng cách mặc định (rất quan trọng) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* 2. Thanh Navbar chính */
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: darkcyan;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 1000;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    margin-right: 2rem;
+}
+
+/* 4. Định dạng từng Nút (thẻ a) */
+.nav-list a {
+    display: block;
+    font-size: 2.2rem;
+    padding: 2rem;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease-out;
+}
+
+.nav-list a:hover {
+    background-color: #45567d;
+}
+
+#welcome-section {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2d2e31;
+    text-align: center;
+    color: white;
+}
+
+#projects {
+    height: 100vh;
+}
+
+@media (max-width: 600px) {
+    .nav-list {
+        margin-right: 0; 
+    }
+
+    .nav-list a {
+        font-size: 1.2rem;
+        padding: 1rem 0.8rem;
+    }
+}
