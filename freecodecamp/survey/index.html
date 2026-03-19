@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Survey Form</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <header>
+            <h1 id="title">Survey Form</h1>
+            <p id="description">Please fill out this survey.</p>
+        </header>
+
+        <body>
+            <main>
+                <form id="survey-form" method="post" action="#">
+                    <fieldset>
+                        <legend>Personal Information</legend>
+                        <label for="name" id="name-label">Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required></label>
+                        <label for="email" id="email-label">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                        <label for="age" id="number-label">Age:</label>
+                        <input type="number" id="number" name="age" placeholder="Enter your age" min="1" max="120">
+                    </fieldset>
+                    
+                    <fieldset>
+                        <legend>Goatedness</legend>
+                        <label for="dropdown" id="dropdown-label">Am I goated?</label>
+                        <select id="dropdown" name="dropdown" required>
+                            <option value="" disabled selected>Select an option</option>
+                            <option value="1">Yes</option>
+                            <option value="2">Hell yeah!</option>
+                            <option value="3">Absolutely!</option>
+                        </select>
+
+                        <label for="radio-group">Do you think I'm goated?</label>
+                        
+
+                        <label for="yes">
+                            <input type="radio" id="yes" name="radio-group" value="yes" class="inline" checked /> Yes
+                        </label>
+                        <label for="yess">
+                            <input type="radio" id="yess" name="radio-group" value="yess" class="inline" /> Hell yeah
+                        </label>
+
+                        <label for="goated"> How goated am I?</label>
+                            <label for="very">
+                                <input type="checkbox" id="very" name="goated" value="very" class="inline" /> Very
+                            </label>
+
+                            <label for="super">
+                                <input type="checkbox" id="super" name="goated" value="super" class="inline" /> Super
+                            </label>
+
+                            <label for="ultra">
+                                <input type="checkbox" id="ultra" name="goated" value="ultra" class="inline" /> Ultra
+                            </label>
+                        </label>
+
+                        <label for="comments">Additional Comments:</label>
+                            <textarea id="comments" name="comments" rows="3" cols="30" placeholder="I am so goated!"></textarea>
+                        </label>
+                    </fieldset>
+
+                    <input type="submit" id="submit" value="Submit" />
+                </form>
+            </main>
+        </body>
+    </body>
