@@ -1,0 +1,69 @@
+/* Thiết lập cơ bản cho trang web */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212; /* Nền tối */
+    color: #f5f5f5; /* Chữ sáng */
+    text-align: center; /* Căn giữa nội dung văn bản */
+    margin: 0;
+    padding: 20px;
+}
+
+#main {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #1e1e1e;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+#title {
+    color: #FDB927; /* Màu vàng Laker */
+    font-size: 3rem;
+    margin-bottom: 5px;
+}
+
+/* =========================================
+   ĐOẠN CSS BẮT BUỘC ĐỂ PASS BÀI TEST 16-19
+   ========================================= */
+
+/* Điều kiện 16: img phải có display là block */
+img {
+    display: block;
+}
+
+/* Điều kiện 17, 18, 19 cho id="image" */
+#image {
+    max-width: 100%; /* Đk 17: max-width 100% */
+    height: auto;    /* Đk 18: height auto */
+    margin: 0 auto;  /* Đk 19: Căn giữa ảnh trong phần tử cha (#img-div) */
+}
+
+/* ========================================= */
+
+#img-caption {
+    margin-top: 15px;
+    font-style: italic;
+    color: #a0a0a0;
+}
+
+#tribute-info {
+    text-align: left; /* Căn trái cho phần danh sách dễ đọc */
+    max-width: 600px;
+    margin: 40px auto;
+    line-height: 1.8;
+}
+
+#tribute-info h2 {
+    text-align: center;
+    color: #FDB927;
+}
+
+a {
+    color: #FDB927;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
