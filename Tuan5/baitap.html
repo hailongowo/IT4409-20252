@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bài 2 & 4</title>
+    </head>
+
+    <body>
+        <div id="bai2">
+            <p><strong>Danh sách sinh viên:</strong> A (85), B (92), C (78), D (90)</p>
+            
+            <div id="ex2-result"></div>
+        </div>
+
+        <div id="bai4">
+            <input type="text" id="text-field" placeholder="Nhap noi dung...">
+            <button type="button" id="btn">Them vao danh sach</button>
+            <ul id="myList"></ul>
+        </div>
+
+
+        <script>
+            const students = [
+                {name: "A", score: 85},
+                {name: "B", score: 92},
+                {name: "C", score: 78},
+                {name: "D", score: 90}
+            ];
+
+            const scores = students.map(students => students.score);
+
+            const totalScores = scores.reduce((acc, n) => acc + n, 0);
+
+            const averageScore = totalScores / students.length;
+            const resultDiv = document.getElementById("ex2-result");
+            resultDiv.innerHTML = averageScore;
+
+            const textField = document.getElementById('text-field');
+            const addButton = document.getElementById('btn');
+            const unorderedList = document.getElementById('myList');
+
+            addButton.addEventListener('click', function() {
+                const textValue = textField.value;
+                const newListItem = document.createElement('li');            
+                newListItem.textContent = textValue;               
+                unorderedList.appendChild(newListItem);
+                textField.value = ''; 
+                textField.focus();
+            })
+        </script>
+    </body>
+</html>
