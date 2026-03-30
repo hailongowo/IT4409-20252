@@ -1,0 +1,72 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #8d99ae; /* Màu nền nhẹ nhàng hơn */
+    font-family: sans-serif;
+}
+
+#drum-machine {
+    background-color: #2b2d42;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 380px;
+}
+
+#display {
+    background-color: #edf2f4;
+    color: #2b2d42;
+    margin: 10px auto 20px auto;
+    padding: 15px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 5px;
+    width: 80%;
+    min-height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#pad-bank {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.drum-pad {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    background-color: #ef233c;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 5px #d90429;
+    transition: all 0.1s ease;
+    user-select: none;
+    
+    /* Các thuộc tính mới thêm để reset style mặc định của button */
+    border: none;
+    outline: none;
+    font-family: inherit; /* Kế thừa font chữ của trang */
+}
+
+/* Khối .drum-pad.active giữ nguyên như cũ */
+.drum-pad.active {
+    transform: translateY(5px);
+    box-shadow: 0 0 #d90429;
+    background-color: #ff4d6d;
+}
